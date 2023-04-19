@@ -1,5 +1,5 @@
 # Disclaimer
-These are scripts I write for personal use. They will be just a few lines. 
+These are small scripts I write for personal use. 
 
 ## http_server
 > Single line script that takes an argument as file path and starts python http.server module(inbuilt) in that directory.
