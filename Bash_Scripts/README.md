@@ -1,7 +1,7 @@
 # Disclaimer
 These are small scripts I write for personal use. 
 
-##docker.sh
+## docker.sh
 > This is a script that I copied from DigitalOcean and combined it to a single line script using "&&" so that I can just copy and paste this line rather 
 > than reading a long tutorial with many steps.
 
