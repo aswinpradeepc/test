@@ -8,7 +8,7 @@ cpp contains simple c++ programs for oops lab in semester 3 of college.
 <h2>docker.sh</h2> 
 A bash script to install docker in linux(ubuntu 22 lts).
 
-##java
+## java
 java contains DSA problems from college
 
 ## Bash Script
