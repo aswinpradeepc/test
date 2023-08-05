@@ -71,3 +71,104 @@ class testStack {
         s.peek();
     }
 }
+
+
+
+//
+//Version 2
+//
+
+import java.util.Scanner;
+
+class Stack {
+    Scanner scanner = new Scanner(System.in);
+
+    public
+    int[] stack;
+    int top = -1;
+    int max = 10;
+
+    public Stack() {
+        System.out.print("Enter the size of the stack :");
+        max = scanner.nextInt();
+        stack = new int[max];
+    }
+
+
+    public int pop() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty");
+            return 0;
+        } else {
+            System.out.print("Popped :");
+            peek();
+            return stack[top--];
+        }
+    }
+
+    public void push(int data) {
+        if (isFull())
+            System.out.println("The stack is already full.");
+        else {
+            top++;
+            stack[top] = data;
+        }
+    }
+
+    public void peek() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty.");
+        } else {
+            System.out.println(stack[top]);
+        }
+    }
+
+    public boolean isFull() {
+        return top == max-1;
+    }
+
+    public boolean isEmpty() {
+        return top == -1;
+    }
+
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Stack s = new Stack();
+        boolean b;
+        b = true;
+        while (b) {
+            int choice = 0;
+            System.out.print("\n 1.Push \n 2.Pop \n 3.Peek \n 4.Exit \n Choose the correct option: ");
+            choice = scanner.nextInt();
+            switch (choice) {
+                case (1): {
+                    System.out.print("enter the element to add to stack :");
+                    int x = scanner.nextInt();
+                    s.push(x);
+                    break;
+                }
+                case (2): {
+                    s.pop();
+                    break;
+                }
+                case (3): {
+                    System.out.print("Topmost element of the stack is :");
+                    s.peek();
+                    break;
+                }
+                case (4): {
+                    b = false;
+                    break;
+                }
+                default: {
+                    System.out.print("Invalid option");
+                }
+            }
+
+        }
+    }
+}
+
