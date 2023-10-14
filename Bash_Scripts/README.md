@@ -9,6 +9,4 @@ These are small scripts I write to automate simple tasks, nothing great.
 > Single line script that takes an argument as file path and starts python http.server module(inbuilt) in that directory.
 > If there is no argument the current directory is served. This is useful if you want to share a particular folder or file from your computer to 
 > another on the same network.
->
-> ## Python Script to merge pdfs
-> According to my folder structure.
+
