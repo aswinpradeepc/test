@@ -1,6 +1,6 @@
 # My test Repo 
 
-Brief things about the things I try.
+Nothin' much here, just the shit I try.
 
 <h2>cpp</h2>
 cpp contains simple c++ programs for oops lab in semester 3 of college.
