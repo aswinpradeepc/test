@@ -14,3 +14,6 @@ java contains DSA problems from college
 ## Bash Script
 Scripts that I experiment with
 
+## 8086
+Assembly programs for s5, microprocessor lab
+
