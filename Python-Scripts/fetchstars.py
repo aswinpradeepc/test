@@ -2,7 +2,7 @@ import requests
 import time
 
 # Set your GitHub personal access token
-TOKEN = "ghp_You23oiDumboKpIXH2j2XGV" 
+TOKEN = "your_token" 
 
 # Set repository details
 REPO_OWNER = "sunithvs"
