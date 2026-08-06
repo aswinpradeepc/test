@@ -1,4 +1,4 @@
-# My test Repo \[based]
+# My test Repo
 
 Nothin' much here, just the shit I try.
 
