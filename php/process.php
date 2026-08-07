@@ -22,9 +22,14 @@ if (empty($errors)){
 	echo "<p>you entered your name: ".htmlspecialchars($name)."</p>";
 	echo "<p>your email: ". htmlspecialchars($email)."</p>";
 	echo "<p>your pass: ". htmlspecialchars($pass)."</p>";
+	session_start();
+	$_SESSION['user'] = $name;
 }else{
 	foreach($errors as $e){
 	echo "$e and $errors[$e]";
 }}
 
-echo "<a href='http://localhost:8000/form.php' >back to the form</a>";
+
+echo "<a href='http://localhost:8000/logout.php'>logout</a><br>";
+
+echo "<a href='http://localhost:8000/form.php'>back to the form</a>";
