@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 $errors = [];
 
 $name = trim($_POST['name'] ?? " ");
@@ -17,16 +17,16 @@ if ($name==""){
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
 	$errors["email"] = "email should be valid";
 	}
-	
+
 if (empty($errors)){
+	setcookie('last_email', $_POST['email'], time() + 3600);
+	$_SESSION['user'] = $name;
 	echo "<p>you entered your name: ".htmlspecialchars($name)."</p>";
 	echo "<p>your email: ". htmlspecialchars($email)."</p>";
 	echo "<p>your pass: ". htmlspecialchars($pass)."</p>";
-	session_start();
-	$_SESSION['user'] = $name;
 }else{
-	foreach($errors as $e){
-	echo "$e and $errors[$e]";
+	foreach($errors as $field => $msg){
+	echo "<p>".htmlspecialchars($msg)."</p>";
 }}
 
 
